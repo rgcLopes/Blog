@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SingStory</title>
+    <link rel="shortcut icon" href="Imagens/A/logo_size_invert.jpg" type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add a gray background color with some padding */
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: radial-gradient(white, #6769cd);
+            color: white;
+        }
+
+        img#comentar a:hover {
+            background-color: #38de56;
+            color: white;
+        }
+
+        img#retuitar a:hover {
+            background-color: red;
+            color: black;
+        }
+
+        img#curtir a:hover {
+            background-color: #15202b;
+            /*1da1f3*/
+            color: white;
+        }
+
+        img#compartilhar a:hover {
+            background-color: #15202b;
+            /*1da1f3*/
+            color: white;
+        }
+
+        img.comentar:hover {
+            position: relative;
+            width: 100px;
+            transition: 1s;
+            opacity: 3s;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 65%;
+            padding-left: 150px;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: #15202b;
+            padding: 20px;
+            border-style: groove;
+            border-color: gray;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 90px;
+            margin-top: 20px;
+        }
+
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            width: 215px;
+        }
+
+        .icones {
+            margin-right: 12px;
+        }
+
+        div.box {
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            display: inline-block;
+        }
+
+        .seguir {
+            border: 0;
+            color: #0095f6;
+            color: rgba(var(--d69, 0, 149, 246), 1);
+            display: inline;
+            padding: 0;
+            position: right;
+        }
+
+        .perfil {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 42px;
+            height: 42px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: #15202b; color: white;">
+
+    <div class="header">
+        <img class="logo" src="Imagens/logoPrincipal.png"></a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <img style="border-radius: 50%; width: 70px; height: 70px;"
+                    src="Imagens/Twitter/UNIAO_SOVIETICA.jpg"><span>União Soviética</span>
+                <h3 style="color: gray; font-size: 15px;">@uniaosovietica</h3>
+
+                <p style="font-size: 25px;"><b>- </b>E se o socialismo for a saída para a igualdade social?</p>
+                <p style="color: gray;">10:31 PM · 18 de ago de 1957</p>
+
+                <hr>
+                <h5>11,4 mil Retweets &nbsp &nbsp &nbsp &nbsp &nbsp 60,8 mil Curtidas</h5>
+                <hr>
+                <span>
+                    <img class="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/comente2.png" /><span> 1,3 mil</span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/retuitar2.png" /> 8,5 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/coracao2.png" /> 47,6 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/envio2.png" />
+                </span>
+            </div>
+
+            <!-- //////////////////////////////////////////////// -->
+
+            <div class="card">
+                <img style="border-radius: 50%; width: 70px; height: 70px;" src="Imagens/Twitter/USA.jpg"><span>Estados
+                    Unidos <span style="color: gray; font-size: 15px;">@usa · 01 de set de 1957</span></h2></span>
+                <h5 style="color: gray;">Em respota a <span style="color: #1a87cb;">@uniaosovietica</span></h5>
+
+                <p><b>- </b>Mas temos que pensar que a economia de mercado possibilita o crescimento, propriedades
+                    privadas e um sistema democrático.</p>
+                <hr style="background-color: red;">
+                <span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/comente2.png" /><span> 1,3 mil</span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/retuitar2.png" /> 8,5 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/coracao2.png" /> 47,6 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/envio2.png" />
+                </span>
+            </div>
+
+            <div class="card">
+                <img style="border-radius: 50%; width: 70px; height: 70px;"
+                    src="Imagens/Twitter/UNIAO_SOVIETICA.jpg"><span>União Soviética <span
+                        style="color: gray; font-size: 15px;">@uniaosovietica · 25 de set de 1957</span></h2></span>
+                <h2>União Soviética <span style="color: gray; font-size: 15px;">@uniaosovietica · </span></h2>
+
+                <p><b>- </b>A minha ideologia com a do nosso Excelentíssimo Estados unidos não são equivalentes,
+                    acredito que o socialismo seja um grande recurso.</p>
+                <hr>
+                <span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/comente2.png" /><span> 1,3 mil</span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/retuitar2.png" /> 8,5 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/coracao2.png" /> 47,6 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/envio2.png" />
+                </span>
+            </div>
+
+            <div class="card">
+                <img style="border-radius: 50%; width: 70px; height: 70px;" src="Imagens/Twitter/USA.jpg"><span>Estados
+                    Unidos <span style="color: gray; font-size: 15px;">@usa · 02 de out de 2020</span></h2></span>
+                <h5 style="color: gray;">Em respota a <span style="color: #1a87cb;">@uniaosovietica</span></h5>
+
+                <p><b>- </b>Como a União soviética acredita que nossas ideias divergem e realmente, então gostaria de
+                    mostrar como a democracia tem esse poder de trazer a ascensão e vitória a nós americanos. Que vença
+                    o melhor.</p>
+                <hr>
+                <span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/comente2.png" /><span> 1,3 mil</span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/retuitar2.png" /> 8,5 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/coracao2.png" /> 47,6 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/envio2.png" />
+                </span>
+            </div>
+
+            <div class="card">
+                <img style="border-radius: 50%; width: 70px; height: 70px;"
+                    src="Imagens/Twitter/UNIAO_SOVIETICA.jpg"><span>União Soviética <span
+                        style="color: gray; font-size: 15px;">@uniaosovietica · 16 de jun de 2020</span></h2></span>
+                <h5 style="color: gray;">Em respota a <span style="color: #1a87cb;">@usa</span></h5>
+
+                <p><b>- </b>Gostaríamos de informar a todos que o primeiro satélite em órbita foi lançado! e o
+                    denominamos o Sputnik 1.</p>
+                <div class="box">
+                    <img src="Imagens/Twitter/post1.jpg" style="height: 300px; width: 540px; margin-left: 50px;" />
+                </div>
+                <hr>
+                <span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/comente2.png" /><span> 1,3 mil</span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/retuitar2.png" /> 8,5 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/coracao2.png" /> 47,6 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/envio2.png" />
+                </span>
+            </div>
+
+            <div class="card">
+                <img style="border-radius: 50%; width: 70px; height: 70px;"
+                    src="Imagens/Twitter/UNIAO_SOVIETICA.jpg"><span>União Soviética
+                    <span style="color: gray; font-size: 15px;">@uniaosovietica · 03 de nov de 1957</span></h2></span>
+                <h5 style="color: gray;">Em respota a <span style="color: #1a87cb;">@usa</span></h5>
+
+                <p><b>- </b>Apenas em 1 mês conseguimos ter grande êxito em nossas pesquisas e exploração cientifica,
+                    viemos avisar a todos que realizamos o lançamento do Sputnik 2 e para mostrar a força soviética
+                    lançamos também uma cadela Laika. Fomos os primeiros a lançar um ser VIVO ao espaço. </p>
+                <div class="box">
+                    <img src="Imagens/Twitter/post2.jpg" style="height: 300px; width: 540px; margin-left: 50px;" />
+                </div>
+                <hr>
+                <span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/comente2.png" /><span> 1,3 mil</span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/retuitar2.png" /> 8,5 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/coracao2.png" /> 47,6 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/envio2.png" />
+                </span>
+            </div>
+
+            <div class="card">
+                <img style="border-radius: 50%; width: 70px; height: 70px;" src="Imagens/Twitter/USA.jpg"><span>Estados
+                    Unidos <span style="color: gray; font-size: 15px;">@usa · 31 de jan de 1958</span></h2></span>
+                <h5 style="color: gray;">Em respota a <span style="color: #1a87cb;">@uniaosovietica</span></h5>
+
+                <p><b>- </b>Ficamos muito felizes com a descoberta da União soviética e seus avanços, mas ficamos mais
+                    felizes ainda em informar o lançamento de nosso próprio satélite e o classificamos como Explorer 1,
+                    e nosso satélite detectou uma região radioativa ao redor da terra.</p>
+                <hr>
+                <span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/comente2.png" /><span> 1,3 mil</span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/retuitar2.png" /> 8,5 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/coracao2.png" /> 47,6 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/envio2.png" />
+                </span>
+            </div>
+
+            <div class="card">
+                <img style="border-radius: 50%; width: 70px; height: 70px;" src="Imagens/Twitter/USA.jpg"><span>Estados
+                    Unidos <span style="color: gray; font-size: 15px;">@usa · 29 de jul de 1958</span></h2></span>
+                <h5 style="color: gray;">Em respota a <span style="color: #1a87cb;">@usa</span></h5>
+
+                <p><b>- </b>Para a nossa coleção de conquistas estamos felizes em avisar que criamos a National
+                    Aeronautics Space Administration a NASA que tem como objetivo fomentar o futuro na pesquisa,
+                    descoberta e exploração espaciais. </p>
+                <div class="box">
+                    <img src="Imagens/Twitter/post3.jpg" style="height: 300px; width: 540px; margin-left: 50px;" />
+                </div>
+                <hr>
+                <span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/comente2.png" /><span> 1,3 mil</span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/retuitar2.png" /> 8,5 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/coracao2.png" /> 47,6 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/envio2.png" />
+                </span>
+            </div>
+
+            <div class="card">
+                <img style="border-radius: 50%; width: 70px; height: 70px;"
+                    src="Imagens/Twitter/UNIAO_SOVIETICA.jpg"><span>União Soviética <span
+                        style="color: gray; font-size: 15px;">@uniaosovietica · 02 de jan de 1957</span></h2></span>
+                <h5 style="color: gray;">Em respota a <span style="color: #1a87cb;">@usa</span></h5>
+                
+                <p><b>- </b>Viemos principalmente mostrar mais uma vez as forças soviéticas, e dizer a todos que torce por nós como os Estados Unidos. nossa mais nova vitória, estamos informando o lançamento do Lunik 1 uma sonda que que em 34 horas aproximadamente passou pela Lua e entrou na órbita do Sol, sendo a 1 sonda a orbitar essa estrela. </p>
+                <div class="box">
+                    <img src="Imagens/Twitter/post4.jpg" style="height: 300px; width: 540px; margin-left: 50px;" />
+                </div>
+                <hr>
+                <span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/comente2.png" /><span> 1,3 mil</span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/retuitar2.png" /> 8,5 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/coracao2.png" /> 47,6 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/envio2.png" />
+                </span>
+            </div>
+
+            <div class="card">
+                <img style="border-radius: 50%; width: 70px; height: 70px;"
+                    src="Imagens/Twitter/UNIAO_SOVIETICA.jpg"><span>União Soviética <span
+                        style="color: gray; font-size: 15px;">@uniaosovietica · 12 de abr de 1961</span></h2></span>
+                <h5 style="color: gray;">Em respota a <span style="color: #1a87cb;">@usa</span></h5>
+
+                <p><b>- </b>Esse é uma vitória para nós soviéticos, é com grande esplendor e orgulho que informamos
+                    a ida do primeiro homem ao espaço. Pelo seu biótipo adequado para a expedição, conseguimos
+                    enviá-lo para o espaço totalizando assim 108 minutos na orbita da terra. Esse é o poder
+                    soviético!</p>
+                <div class="box">
+                    <img src="Imagens/Twitter/post5.jpg" style="height: 300px; width: 540px; margin-left: 50px;" />
+                </div>
+                <hr>
+                <span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/comente2.png" /><span> 1,3 mil</span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/retuitar2.png" /> 8,5 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/coracao2.png" /> 47,6 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/envio2.png" />
+                </span>
+            </div>
+
+            <div class="card">
+                <img style="border-radius: 50%; width: 70px; height: 70px;" src="Imagens/Twitter/USA.jpg"><span>Estados
+                    Unidos <span style="color: gray; font-size: 15px;">@usa · 05 de mai de 1961</span></h2></span>
+                <h5 style="color: gray;">Em respota a <span style="color: #1a87cb;">@uniaosovietica</span></h5>
+
+                <p><b>- </b>Ao nosso nobríssimo adversário 108 minutos realmente é um bom tempo, principalmente para
+                    explorar um lugar nunca explorado antes, mas enviamos o nosso primeiro homem ao espaço o Alan
+                    Bartlett Shepard Jr que foi enviado na Freedom 7 e conseguiu um número excelente de 15 minutos
+                    suborbital.</p>
+                <div class="box">
+                    <img src="Imagens/Twitter/post6.jpg" style="height: 300px; width: 540px; margin-left: 50px;" />
+                </div>
+                <hr>
+                <span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/comente2.png" /><span> 1,3 mil</span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/retuitar2.png" /> 8,5 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/coracao2.png" /> 47,6 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/envio2.png" />
+                </span>
+            </div>
+
+            <div class="card">
+                <img style="border-radius: 50%; width: 70px; height: 70px;" src="Imagens/Twitter/USA.jpg"><span>Estados
+                    Unidos <span style="color: gray; font-size: 15px;">@usa · 20 de jul de 1969</span></h2></span>
+                <h5 style="color: gray;">Em respota a <span style="color: #1a87cb;">@usa</span></h5>
+
+                <p><b>- </b>Ao nosso nobríssimo adversário 108 minutos realmente é um bom tempo, principalmente para
+                    explorar um lugar nunca explorado antes, mas enviamos o nosso primeiro homem ao espaço o Alan
+                    Bartlett Shepard Jr que foi enviado na Freedom 7 e conseguiu um número excelente de 15 minutos
+                    suborbital.</p>
+                <div class="box">
+                    <img src="Imagens/Twitter/post7.jpg" style="height: 300px; width: 540px; margin-left: 50px;" />
+                </div>
+                <hr>
+                <span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/comente2.png" /><span> 1,3 mil</span>
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/retuitar2.png" /> 8,5 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/coracao2.png" /> 47,6 mil
+                    <img id="comentar" style="margin-left: 60px; height: 25px; width: 25px;"
+                        src="Imagens/Twitter/envio2.png" />
+                </span>
+            </div>
+
+
+
+
+
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+            </div>
+            <div class="card">
+            </div>
+            <div class="card">
+            </div>
+            <div class="card">
+            </div>
+            <div class="card">
+            </div>
+            <div class="card">
+            </div>
+            <div class="card">
+            </div>
+            <div class="card">
+            </div>
+        </div>
+    </div>
+    <br>
+    <a href="https://institutosingularidades.edu.br/novoportal/" target="_blank">
+        <img class="footer" src="Imagens/Logo_singularidades.png"></a>
+</body>
+
+</html>

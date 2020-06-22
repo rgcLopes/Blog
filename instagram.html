@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SingStory</title>
+    <link rel="shortcut icon" href="Imagens/A/logo_size_invert.jpg" type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add a gray background color with some padding */
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: radial-gradient(white, #6769cd);
+            color: white;
+        }
+
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 50%;
+            padding: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        /* Fake image */
+        .fakeimgLeft {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 90px;
+            margin-top: 20px;
+        }
+
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            width: 215px;
+        }
+
+        .icones {
+            margin-right: 12px;
+        }
+
+        div.box {
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            display: inline-block;
+        }
+
+        .seguir {
+            border: 0;
+            color: #0095f6;
+            color: rgba(var(--d69, 0, 149, 246), 1);
+            display: inline;
+            padding: 0;
+            position: right;
+        }
+
+        .perfil {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 42px;
+            height: 42px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body style="background: radial-gradient(#ff9849, #973cb3);;">
+
+    <div class="header">
+        <img class="logo" src="Imagens/logoPrincipal.png"></a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>mauro_moichalé</h2>
+                <h5>06 de Julho, 2017*</h5>
+                <div class="box">
+                    <img src="Imagens/Instagram/MauroMoichale/post1.png" style="height: 300px; width: 300px;" />
+                    <span></span>
+                </div>
+                <div class="box">
+                    <img src="Imagens/Instagram/MauroMoichale/post1.1.jpg" style="height: 300px; width: 540px; margin-left: 50px;" />
+                </div>
+
+
+                <!--<p>Some text..</p>-->
+                <p><b>mauro_moichalé </b> <u>#TBT</u> para o ano de 1970, o ano em que eu pensei que meus pais haviam
+                    saído de férias.
+                    Sem mim, seu único filho. Esta thread é um apanhado de fotos da vida que eu vivi a 40 anos atrás no
+                    apartamento do meu recém falecido avô enquanto meus pais eram perseguidos pela ditadura. Estas duas
+                    fotos retratam duas “últimas vezes”. Última vez que joguei futebol de botão num lar normal. Última
+                    vez que meu pai me abraçou. Hoje eu entendo que mesmo com o medo, as saudades e a raiva que senti
+                    dos meus pais, me deixar para trás com estranhos foi o melhor que eles puderam fazer por mim.
+                    A ditadura militar talvez não poupasse um garoto. Até hoje não sei como poupou minha mãe.</p>
+            </div>
+            <div class="card">
+                <h2>mauro_moichalé</h2>
+                <h5>23 de Novembro, 2017*</h5>
+                <!--<div class="fakeimg" style="height:200px;">
+                    <img class="footer" src="Imagens/Logo_singularidades.png"></a>
+                </div>-->
+
+                <div class="box" style="margin-right: 20px;">
+                    <img src="Imagens/Instagram/MauroMoichale/post2.jpg" style="height: 300px; width: 420px;" />
+                    <span></span>
+                </div>
+                <div class="box">
+                    <img src="Imagens/Instagram/MauroMoichale/post2.1.jpg" style="height: 300px; width: 420px; margin-left: 180px;" />
+                </div>
+                <!--<div class="box">
+                    <img src="Imagens/Post/post2.2.jpg" style="height: 300px;"/>
+                </div>-->
+
+                <!--<p>Some text..</p>-->
+                <p><b>mauro_moichalé </b> Estas duas fotos representam encontros: um com Schlom que foi meu avô adotivo
+                    e temporário. Hoje acho que ele sempre soube mais do que eu pensava sobre o paradeiro dos meus pais.
+                    Me pergunto se ele teve medo de me abrigar, de ser visto como cúmplice de meus pais. O segundo
+                    encontro
+                    foi com Hanna e com os meninos da rua, todos da comunidade judia. Tive sorte de ter sido acolhido
+                    por
+                    todos apesar de não ter sido criado como judeu. As senhoras me alimentarem, me vestiram e os novos
+                    amigos me distraíram com futebol, as brincadeiras e as moças do provador da loja da mãe de Hanna.
+                    Foram
+                    estas pessoas que me deram o apelido que hoje eu entendo e gosto. Moichalé, se é que se escreve
+                    assim
+                    mesmo... </p>
+            </div>
+            <div class="card">
+                <h2>mauro_moichalé</h2>
+                <h5>29 de Janeiro, 2018*</h5>
+                <!--<div class="fakeimg" style="height:200px;">
+                    <img class="footer" src="Imagens/Logo_singularidades.png"></a>
+                </div>-->
+
+                <div class="box">
+                    <img src="Imagens/Instagram/MauroMoichale/post3.png" style="height: 300px; width: 420px;" />
+                    <span></span>
+                </div>
+                <div class="box">
+                    <img src="Imagens/Instagram/MauroMoichale/post3.1.png" style="height: 300px; width: 420px; margin-left: 180px;" />
+                </div>
+
+
+                <!--<p>Some text..</p>-->
+                <p><b>mauro_moichalé </b> Estas duas fotos me trazem memórias agridoces. Não pelo o que estava
+                    acontecendo nelas, mas
+                    por me sentir mal por ter tido emoções tão fortes e positivas enquanto meus pais eram perseguidos e
+                    torturados em
+                    algum porão. Sei que não tive culpa. Se meu pai pudesse me vir vibrando com os gols do Brasil ou
+                    sonhando ser como
+                    aquele “negro voador” talvez ele se sentisse orgulhoso de seus sacrifícios já que foi pela liberdade
+                    de todos que
+                    meu pai e tantas outras pessoas se levantaram contra o regime militar.</p>
+            </div>
+            <div class="card">
+                <h2>mauro_moichalé</h2>
+                <h5>11 de Agosto, 2018*</h5>
+                <!--<div class="fakeimg" style="height:200px;">
+                    <img class="footer" src="Imagens/Logo_singularidades.png"></a>
+                </div>-->
+
+                <div class="box">
+                    <img src="Imagens/Instagram/MauroMoichale/post4.png" style="height: 300px; width: 420px;" />
+                    <span></span>
+                </div>
+                <div class="box">
+                    <img src="Imagens/Instagram/MauroMoichale/post4.1.png" style="height: 300px; width: 420px; margin-left: 180px;" />
+                </div>
+
+
+                <!--<p>Some text..</p>-->
+                <p><b>mauro_moichalé </b> Lembro-me deste dia como se fosse hoje. Lembro-me do que eu senti ao ver a
+                    polícia chegar com aqueles cavalos. Eles me pareceram gigantescos, assustadores. Eu não tinha ideia
+                    da dimensão do que estava acontecendo ali. Alunos sendo arrancados da universidade por policiais
+                    armados. Foram só muitos anos mais tarde que eu entendi que a ditadura militar tinha medo das
+                    instituições de ensino, tinha medo da educação que ameaçava o regime. Que perigo correu nosso amigo
+                    Ítalo. Que terá sido feito dele depois de eu o ter ajudado, tê-lo abrigado na casa de meu avô? Nunca
+                    mais o vi. Espero que tenha sobrevivido, que não tenha sido pego e morto. Hoje entendo que ele era
+                    a favor do comunismo e por isso ele foi ferido. Quisera que alguém tivesse a mesma coragem, ou
+                    ainda a mesma ingenuidade que eu tive para com meu pai. Talvez ele não estivesse partido.</p>
+            </div>
+            <div class="card">
+                <h2>mauro_moichalé</h2>
+                <h5>05 de Dezembro, 2018*</h5>
+
+                <div class="box">
+                    <img src="Imagens/Instagram/MauroMoichale/post5.png" style="height: 300px; width: 420px;" />
+                    <span></span>
+                </div>
+                <div class="box">
+                    <img src="Imagens/Instagram/MauroMoichale/post5.1.png" style="height: 300px; width: 420px; margin-left: 180px;" />
+                </div>
+
+
+                <!--<p>Some text..</p>-->
+                <p><b>mauro_moichalé </b>Um retorno e uma despedida. Jamais havia visto minha mãe tão abatida, tão
+                    machucada. Minha mãe nunca mais foi a mesma. Nunca quis, ou ainda, nunca pôde me contar tudo o que
+                    aconteceu. Não se podia mais usar a palavra “comunismo” em casa. Sobre meu pai ela só me disse que
+                    os dois pagaram por seus erros. O que aconteceu com eles de fato eu jamais soube, mas com o passar
+                    dos anos, os estudos e o amadurecimento, tenho uma ideia. Cuidei de minha mão até o seu último dia.
+                    Com Hanna eu ainda mantenho contato apesar do tempo e da distância. Hanna foi quem me ajudou a
+                    baixar a guarda, a fazer amigos. Uma garota extraordinária, corajosa, inteligente. Dizer-lhe adeus
+                    não foi fácil. Sempre lembrei dela com carinho por ter me dado a figurinha que faltava no meu álbum.
+                    Dei a ela minha bola em retorno, era a coisa mais preciosa que eu tinha. Minha vida mudou muito
+                    depois daquele dia, já não me sentia mais tão criança, tive de me tornar o homem da casa. 1970
+                    foi um ano inesquecível e mudou a minha vida quando meus pais saíram de férias.</p>
+            </div>
+
+            <div class="card">
+                <h2>tangerine.girl</h2>
+                <h5>20 de Julho, 2019</h5>
+                <!--<div class="fakeimg" style="height:200px;">
+                    <img class="footer" src="Imagens/Logo_singularidades.png"></a>
+                </div>-->
+
+                <div class="box">
+                    <img src="Imagens/Instagram/TangerinaGirls/post1.png"
+                        style="height: 300px; width: 420px; margin-left: 250px;" />
+                    <span></span>
+                </div>
+
+
+                <!--<p>Some text..</p>-->
+                <p><b>tangerine.girl </b>A menina passava o dia observando o zepelim na esperança de ser vista.
+                    Semana passada minha tia avó Tangerina faleceu. Ela era irmã mais velha do meu avô por parte de mãe.
+                    Minha mãe tomou conta dela em seus últimos anos de sanidade. Só fui descobrir o seu nome em seu
+                    enterro: Clara. Tia Tangerina era uma pessoa de poucas palavras e muito sozinha, ninguém sabe porque
+                    nunca encontrou alguém. Segundo minha mãe, diziam que nunca casou porque ela era uma coca-cola e
+                    homem nenhum quis saber dela. Pra quem nunca ouviu esse termo, chamavam de coca-cola as moças de
+                    família que se envolviam com os marines (soldados) americanos instalados na base aérea em Fortaleza,
+                    no início dos anos 1940, durante a segunda guerra. Meu palpite é que ela que não quis saber mais de
+                    homem nenhum e decidiu é cuidar de si. Tia Tangerina era uma mulher empoderada e trabalhadora, para
+                    que que ela ia precisar de alguém? Ela não deixou muita coisa, só velharia - pelas palavras de minha
+                    mãe - e uma caixa com fotos, revistas antigas e seu diário. Fiz questão de ficar com a caixa.
+                    Comecei a ler seu diário pela última página. Ela só escreveu até metade de 1942, com uns 16 anos.
+                    Aqui vai seu último trecho.
+                    "Hoje eu estava deitada na areia sentindo o sol na minha pele quando o zepelim deles passou no
+                    horário de sempre. Hoje tive certeza que ele estava mesmo me admirando, um bilhete caiu na areia.
+                    Meu future husband tem uma letra linda. Nem estou acreditando que eu vou encontrar ele hoje. Que
+                    dream. Vou usar até meu dress mais lindo. Vê só como meu inglês melhorou? Depois conto tudo."
+                    Ela também guardou o bilhetinho do americano.
+                    “Dear Tangeríne-Girl. Please você vem hoje (today) base X. Dancing, show. Oito horas P.M.”
+                    O que será que aconteceu depois? Escrevam nos comentários seus palpites, equanto isso vou procurando
+                    uma resposta.
+                    <br><br>#tiaavo #mulhercocacola #tangerina #tangerine #fortaleza #ceara #segundaguerramundial</p>
+            </div>
+
+            <div class="card">
+                <h2>tangerine.girl</h2>
+                <h5>25 de Julho, 2019</h5>
+                <!--<div class="fakeimg" style="height:200px;">
+                    <img class="footer" src="Imagens/Logo_singularidades.png"></a>
+                </div>-->
+
+                <div class="box">
+                    <img src="Imagens/Instagram/TangerinaGirls/post2.png"
+                        style="height: 300px; width: 420px; margin-left: 250px;" />
+                    <span></span>
+                </div>
+
+
+                <!--<p>Some text..</p>-->
+                <p><b>tangerine.girl </b>Moça que não se dá respeito vira Coca-Cola
+                    Ainda não descobri o que aconteceu depois que tia Tangerina parou de escrever. Logo que souber,
+                    compartilho aqui com vocês.
+                    Depois de mergulhar mais um pouco em seu diário resolvi pesquisar um pouco mais sobre as mulheres
+                    coca-cola. Encontrei um texto do jornal O Povo, escrito por Ana Miranda.
+                    Ela diz: "Tidas como imorais, desafiavam os costumes de uma cidade ainda ingênua e conservadora,
+                    enfrentando a própria família e ignorando as maledicências que lançavam contra elas. Algumas eram de
+                    famílias tradicionais, e a maioria, de classe abastada ou média. Tinham educação escolar, vestiam-se
+                    com apuro, possuíam recursos e eram destinadas a um bom casamento. Bem versadas nos costumes
+                    europeus e norte-americanos, porque liam revistas como A Scena Muda, e assistiam a filmes charmosos
+                    em que as mulheres fumavam languidamente, deixavam entrever seus corpos, entregavam-se aos braços de
+                    galãs, e tinham vidas livres e quase sempre escandalosas, as coca-colas se comportavam como essas
+                    estrelas despudoradas. Diz Marciano Lopes que o apelido vem do fato de elas terem tido a
+                    exclusividade de tomar o refrigerante americano que era um símbolo daquele país aliado. Também, algo
+                    de que se tomava o conteúdo e se jogava fora o frasco. Um produto fabricado em série, de sabor
+                    estranho, e descartável."
+                    Ainda bem que os tempos mudaram e que eu adoro uma Coca-Cola.
+                    <br><br>#tiaavo #mulhercocacola #tangerina #tangerine #fortaleza #ceara #segundaguerramundial
+                    #feminismo</p>
+            </div>
+
+            <div class="card">
+                <h2>tangerine.girl</h2>
+                <h5>27 de Junho, 2017</h5>
+                <!--<div class="fakeimg" style="height:200px;">
+                    <img class="footer" src="Imagens/Logo_singularidades.png"></a>
+                </div>-->
+
+                <div class="box">
+                    <img src="Imagens/Instagram/TangerinaGirls/post3.png"
+                        style="height: 300px; width: 420px; margin-left: 250px;" />
+                    <span></span>
+                </div>
+
+
+
+                <!--<p>Some text..</p>-->
+                <p><b>tangerine.girl </b>Também encontrei na caixa de memórias de Tia Tangerina algumas revistas
+                    antigas,
+                    entre elas essa revista Life, ela provavelmente ganhou de algum dos marines. A revista está toda em
+                    inglês e tem vários trechos sublinhados com caneta. Ela também desenhava corações em algumas fotos.
+                    Tia Tangerina deve ter sonhado muito com essas revistas.
+                    Também li um trechinho sobre uma "Coca-Cola" que, segundo Clara, se deu bem. Seu nome era Leda, e
+                    era noiva de seis anos do meu tio avô mais velho, Raimundo.
+                    Tia Tangerina escreve: "Hoje o americano veio buscar Ledinha de carro. Parece que ela vai mesmo para
+                    a América com seu love. Tava de mala e tudo. Raimundinho ficou destruído e destruiu um monte de
+                    coisas no seu quarto, eu fiquei longe o dia todo. Ledinha que tá certa, eu faria de tudo pra poder
+                    sair desse fim de mundo. A vida lá fora deve ser mesmo muito melhor. Eu dançaria todo dia como
+                    Ginger Rogers e Fred Astaire.".
+                    <br><br>#tiaavo #mulhercocacola #tangerina #tangerine #fortaleza #ceara #segundaguerramundial
+                    #feminismo
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>tangerine.girl</h2>
+                <h5>15 de Julho, 2019</h5>
+
+                <div class="box">
+                    <img src="Imagens/Instagram/TangerinaGirls/post4.png"
+                        style="height: 300px; width: 420px; margin-left: 250px;" />
+                    <span></span>
+                </div>
+
+                <!--<p>Some text..</p>-->
+                <p><b>tangerine.girl </b>Semana passada descobri o que aconteceu com tia Clara, se a memória da minha
+                    fonte de 94 anos estiver correta. Conversei com Dona Alzira, que era uma das amigas de minha tia na
+                    escola. Ela me contou que Clara foi mesmo no encontro que ela menciona em seu diário. Se arrumou
+                    toda e saiu escondida pela janela para que seus pais não soubessem de nada. Caminhou pelas ruas
+                    escuras até a base X. Seu americana a estava esperando. Ele foi se aproximando, ele era mais bonito
+                    do que tinha imaginado, parecia uma estrela de cinema. Ele a chamou de Tangerine Girl e foi se
+                    aproximando. Ela estava tão hipnotizada por seu marine que não viu que outros homens se aproximavam
+                    também, todos vestindo o uniforme branco da marinha americana. Quando se deu conta, já estava
+                    cercada. Eles começaram a tocá-la de forma inapropriada e puxá-la para todos os lados. Por sorte,
+                    conseguiu escapar e saiu correndo de volta para casa. Dona Alzira contou que depois disso Clarinha
+                    ficou doente em casa, trancada no quarto, por semanas. Depois que saiu é como se tivesse perdido seu
+                    brilho.
+                    Fiquei mal por alguns dias depois que ouvi o que aconteceu com minha tia e nem consegui mais olhar
+                    para sua caixa de memórias. Mas percebi que era muito importante compartilhar sua história e como
+                    sua adolescência foi arrasada por um bando de imbecis arrogantes. Eles não podiam ter feito isso com
+                    ela. Não consigo nem mais chamar minha tia Clara de Tangerina.
+                    Aqui vai um dos primeiros trechos que Clarinha escreveu em seu diário
+                    "Hoje eu e Alzira fomos ver a base dos americanos. Eu já tinha visto eles pela cidade, mas ver o
+                    grupo todo, correndo em fileira, é ainda melhor. Só tem homem bonito, parece que saíram de um filme,
+                    quanto loiro de olho azul. Ouvi hoje na PRE-9 que ainda vão ficar um tempo por aqui, até a guerra
+                    acabar. Eles gostam de fazer festinha lá no Estoril até tarde. Um dia desses ainda escapo para ir
+                    também. Quero ser levada para longe daqui."
+                    <br><br>#tiaavo #mulhercocacola #tangerina #tangerine #fortaleza #ceara #segundaguerramundial
+                    #feminismo</p>
+            </div>
+
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h3>Sugestões para você</h3>
+                <img class="icones" src="Imagens/instagram.png">Shlomo</a>
+                <button class="seguir" type="button">Seguir</button>
+
+
+                <div class="card">
+                    <h2>Redes sociais</h2>
+                    <a href="https://www.instagram.com/brjimports/" target="_black"><img class="icones"
+                            src="Imagens/instagram.png"></a>
+                    <a href="#"><img src="Imagens/facebook.png"></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br>
+        * : Datas fictícias 
+        <br>
+        <a href="https://institutosingularidades.edu.br/novoportal/" target="_blank">
+            <img class="footer" src="Imagens/Logo_singularidades.png"></a>
+</body>
+
+</html>
